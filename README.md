@@ -13,8 +13,8 @@ Here we utilize the K-medoids algorithm (https://en.wikipedia.org/wiki/K-medoids
 1. Take *N* samples *{_x_}<sub>i</sub><sup>N</sup>*, a distance function *f(x<sub>i</sub>,x<sub>j</sub>)*, and branching factor *k*
 2. Construct tree root as full ensemble of data points
 3. Select *k* samples randomly from _x_ to serve as medoids, _y_
-4. Cluster all _x_ points to _y_, C<sub>m</sub>={ x<sub>i</sub> :  ||x<sub>i</sub> - y<sub>m</sub>|| < ||x<sub>i</sub> - y<sub>j</sub>|| for all j != m}
-5. Find sample with minimum distance inside C<sub>k</sub>, argmin<sub>C<sub>m,i</sub></sub> Sum<sub>j=1</sub><sup>|C<sub>m</sub>|</sup>||C<sub>m,i</sub>-C<sub>m,j</sub>||
+4. Cluster all _x_ points to _y_, C<sub>m</sub>={ x<sub>i</sub> :  *f(x<sub>i</sub>, y<sub>m</sub>)* < *f(x<sub>i</sub>, y<sub>j</sub>)* for all j != m}
+5. Find sample with minimum internal distance in C<sub>m</sub>, argmin<sub>C<sub>m,i</sub></sub> Sum<sub>j=1</sub><sup>|C<sub>m</sub>|</sup> *f(C<sub>m,i</sub>, C<sub>m,j</sub>)*
 6. Update medoids to the new values found in Step 4.
 7. Goto 3 until converged/reached iteration limit
 8. For each cluster, C<sub>i</sub>, construct new node in tree as a descendent from the root with only the data points in C<sub>i</sub>
