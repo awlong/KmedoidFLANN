@@ -27,7 +27,8 @@ Here we utilize the K-medoids algorithm (https://en.wikipedia.org/wiki/K-medoids
 
 
 # TODO:
-- Push current branch of code
+- Refactor into individual files for ease of understanding (monolithic header is tough)
+- Write simple example code
 - Refactor to remove Armadillo dependencies
 - Add OpenMP and/or MPI support for parallelized search through the tree
   - Both batch and individual NN search parallelization
