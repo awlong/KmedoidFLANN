@@ -37,4 +37,5 @@ Built using the Armadillo C++ Linear Algebra Library (http://arma.sourceforge.ne
 
 # References
 [1] M. Muja and D. G. Lowe, "Scalable Nearest Neighbor Algorithms for High Dimensional Data," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 36, no. 11, pp. 2227-2240, Nov. 1 2014.
+
 [2] M. Muja, “Scalable nearest neighbour methods for high dimensional data,” Doctoral Thesis, University of British Columbia, 2013.
