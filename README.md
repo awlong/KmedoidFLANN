@@ -9,6 +9,11 @@ These two implementations fail when utilizing more complex distance measures, or
 
 Here we utilize the K-medoids algorithm (https://en.wikipedia.org/wiki/K-medoids) to construct a K-medoid priority-tree akin to the K-means priority-tree version of FLANN.
 
+# Features:
+- Templated to work on arbitrary data objects with user-defined distance functions
+- Sparse distance matrix storage, minimizing repetitive distance computations
+- Radius and top M NN search protocols
+
 # Algorithm Sketch: Building a K-medoid tree
 1. Take *N* samples *{_x_}<sub>i</sub><sup>N</sup>*, a distance function *f(x<sub>i</sub>,x<sub>j</sub>)*, and branching factor *k*
 2. Construct tree root as full ensemble of data points
