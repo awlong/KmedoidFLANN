@@ -333,7 +333,7 @@ double KMedTree<T>::getDistance(int v1, int v2)
     ++_dist_call_count;
     d_loc->second = d;
 
-    return 0;
+    return d;
 }
 
 template <typename T>
